@@ -1,0 +1,25 @@
+_base_: '../_base_/cityscapes.yml'
+
+batch_size: 24
+iters: 60000
+
+model:
+  type: DeepLabV3P
+  backbone:
+    type: MobileNetV2
+    channel_ratio: 1.0
+    min_channel: 16
+    pretrained: https://bj.bcebos.com/paddleseg/dygraph/mobilenetv2.tar.gz
+    # output_stride: 16
+    # multi_grid: [1, 1, 2]
+  num_classes: 4
+  backbone_indices: [0, 3]
+  aspp_ratios: [1, 12, 24, 36]
+  aspp_out_channels: 256
+  align_corners: False
+  pretrained: null
+
+pred_dataset:
+  num_classes: 4
+  transforms:
+    - type: Normalize
