@@ -14,7 +14,7 @@
 ```
 ## 使用方式
 A：在AI Studio上[运行本项目](https://aistudio.baidu.com/aistudio/usercenter)  
-B：将比赛数据集压缩文件放在data文件夹中。
-C: 修改train.ipynb中的压缩文件名，依次运行每个cell即可训练。
-D: 运行predict.ipynb文件中的每个cell即可完成预测推理，结果保存在Output/result/result文件中。
-E: 配置文件为PaddleSeg/configs/deeplabv3p/deeplabv3p_mobilenetv2.yml
+B：将比赛数据集压缩文件放在data文件夹中。 
+C: 修改train.ipynb中的压缩文件名，依次运行每个cell即可训练。 
+D: 运行predict.ipynb文件中的每个cell即可完成预测推理，结果保存在Output/result/result文件中。 
+E: 配置文件为PaddleSeg/configs/deeplabv3p/deeplabv3p_mobilenetv2.yml 
